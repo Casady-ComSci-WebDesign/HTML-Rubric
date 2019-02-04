@@ -6,20 +6,34 @@
 
     <style>
 
-      .rubric th, td{
-        padding: 15px;
-        border-style: solid;
-        border-width: 2px;
-        border-color: rgb(0, 0, 0);
+      .requirements {
+        background-color: #cccccc;
+        width: 50%;
+      }
+
+      th, td {
+        padding: 35px;
         margin: 0px;
       }
 
-      .requirements th, td{
-        padding: 15px;
-        border-style: solid;
-        border-width: 2px;
-        border-color: rgb(0, 0, 0);
-        margin: 0px;
+      #col1 {
+        background-color: #cccccc;
+      }
+
+      #col2 {
+        background-color: #d9ead3;
+      }
+
+      #col3 {
+        background-color: #fff2cc;
+      }
+
+      #col4 {
+        background-color: #fce5cd;
+      }
+
+      #col5 {
+        background-color: #f4cccc;
       }
 
     </style>
@@ -31,34 +45,34 @@
     <table class = 'rubric'>
       <tr>
         <th style = 'border-style: none;'></th>
-        <th>Excellent</th>
-        <th>Good</th>
-        <th>Fair</th>
-        <th>Poor</th>
+        <th id = 'col2'>Excellent</th>
+        <th id = 'col3'>Good</th>
+        <th id = 'col4'>Fair</th>
+        <th id = 'col5'>Poor</th>
       </tr>
 
       <tr>
-        <th>Content</th>
-        <td>The objective of the form is clear, and all elements of the form belong and the order makes sense</td>
-        <td>The objective of the  form is not completely understood, most of the elements belong</td>
-        <td>The objective of the form is unclear, and there are multiple elements that do not belong</td>
-        <td>Elements on form are out of place, content is not completely useful</td>
+        <th id = 'col1'>Content</th>
+        <td id = 'col2'>The objective of the form is clear, and all elements of the form belong and the order makes sense</td>
+        <td id = 'col3'>The objective of the  form is not completely understood, most of the elements belong</td>
+        <td id = 'col4'>The objective of the form is unclear, and there are multiple elements that do not belong</td>
+        <td id = 'col5'>Elements on form are out of place, content is not completely useful</td>
       </tr>
 
       <tr>
-        <th>Function</th>
-        <td>The form uses multiple selectables, where they make sense</td>
-        <td>The form uses multiple selectables, but one or two don’t work with the content presented</td>
-        <td>The form’s selectables make sense, but not many are used</td>
-        <td>The form uses few to no selectables. Those that are used don’t make sense</td>
+        <th id = 'col1'>Function</th>
+        <td id = 'col2'>The form uses multiple selectables, where they make sense</td>
+        <td id = 'col3'>The form uses multiple selectables, but one or two don’t work with the content presented</td>
+        <td id = 'col4'>The form’s selectables make sense, but not many are used</td>
+        <td id = 'col5'>The form uses few to no selectables. Those that are used don’t make sense</td>
       </tr>
 
       <tr>
-        <th>Flow</th>
-        <td>The use of field sets to group related inputs</td>
-        <td>Related selectables are grouped together</td>
-        <td>At least one section where the selectables are not compatible</td>
-        <td>The flow does is not yes so jarring it gives you whiplash</td>
+        <th id = 'col1'>Flow</th>
+        <td id = 'col2'>The use of field sets to group related inputs</td>
+        <td id = 'col3'>Related selectables are grouped together</td>
+        <td id = 'col4'>At least one section where the selectables are not compatible</td>
+        <td id = 'col5'>The flow does is not yes so jarring it gives you whiplash</td>
       </tr>
     </table>
 
@@ -68,17 +82,17 @@
     <br />
     <br />
 
-    <table class = 'requirements'>
+    <table>
       <tr>
-        <th colspan="2">Requirements</th>
+        <th colspan="2" class = 'requirements'>Requirements</th>
       </tr>
 
       <tr>
-        <th>Content</th><th>Function</th>
+        <th class = 'requirements'>Content</th><th class = 'requirements'>Function</th>
       </tr>
 
       <tr>
-        <td>
+        <td class = 'requirements'>
           - First name <br />
           - Last name <br />
           - Phone number <br />
@@ -89,7 +103,7 @@
           - Username <br />
           - Password <br />
         </td>
-        <td>
+        <td class = 'requirements'>
           - At least 3 functional selectables <br />
           - Checkboxes <br />
           - Radiobuttons <br />
